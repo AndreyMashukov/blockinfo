@@ -9,7 +9,7 @@
 namespace AM\Blockinfo;
 
 use \Exception;
-use \Logics\Foundation\HTTP\HTTPclient;
+use \Agentzilla\HTTP\HTTPclient;
 
 /**
  * Class for work with poloniex API
@@ -20,13 +20,15 @@ use \Logics\Foundation\HTTP\HTTPclient;
 class Blocks
     {
 
-	/**
-	 * Get information about new block
-	 *
-	 * @param string $currency Name of currency
-	 *
-	 * @return array Block information
-	 */
+    /**
+     * Get information about new block
+     *
+     * @param string $currency Name of currency
+     *
+     * @throws Exception
+     *
+     * @return array Block information
+     */
 
 	public function getNew(string $currency):array
 	    {
@@ -160,6 +162,3 @@ class Blocks
 
 
     } //end class
-
-
-?>

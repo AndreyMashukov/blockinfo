@@ -21,7 +21,7 @@
     },
     "require": {
         "php": ">=7",
-        "logics/http": "*",
+        "agentzilla/http": "^0.1",
         "ext-json": "*"
 
     },
